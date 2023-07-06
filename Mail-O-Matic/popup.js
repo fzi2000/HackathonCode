@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function sentimentAnalysis(text) {
         const url = "https://api.ai21.com/studio/v1/j2-ultra/complete";
-        const bad_words=["bad","horrible","dirty","unclean", "dislike","eww", "sanvi","old", "trash","smelly","noisy", "nasty"]
+        const bad_words=["bad","horrible","dirty","unclean", "dislike","eww","old", "trash","smelly","noisy", "nasty"]
         const good_words=["good","amazing","clean","beautiful","happy","excellent","like","awesome","lovely","fathima","spacious","nice","friendly","great","gorgeous"]
         const containsBadWord = bad_words.some(word => text.toLowerCase().includes(word.toLowerCase()));
         const containsGoodWord = good_words.some(word => text.toLowerCase().includes(word.toLowerCase()));
