@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mail-O-Matic Features</title>
+  <script src="popup.js"></script>
+  <style>
+    .button-spacing {
+      margin-bottom: 10px;
+      background-color: #ffe1ea;
+      color: #023C40;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+     .prompt-style {
+      margin-bottom: 10px;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-icon {
+      width: 50px; /* Adjust the width as per your icon/image size */
+    }
+    .header-text {
+      color: #c350ff;
+    }
+
+    /*
+    .color-lightblue {
+      color: #9CF6F6;
+    }
+    .color-darkcyan {
+      color: #023C40;
+    } */
+
+  </style>
+</head>
+
+<body style="background: linear-gradient(to bottom, #ffe6fe, #ffc4fa);">
+
+  <div class="header-container">
+    <img src="icon128.png" alt="Icon" class="header-icon">
+    <h2 class="header-text">Mail-O-Matic Features</h3>
+  </div>
+
+  <input type="text" id="composeInput" placeholder="Enter a prompt to smart compose" class="prompt-style">
+  <button id="smartComposeBtn" class="button-spacing">Smart Compose</button>
+  <div id="outputCompose"></div>
+  <button id="summarizeBtn" class="button-spacing">Summarize</button>
+  <div id="outputSummary"></div>
+  <button id="sentimentAnalysisBtn" class="button-spacing">Sentimental Analysis</button>
+  <div id="outputSenti"></div>
+
+</body>
+</html>
+
+<!-- In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel or storage in a storage medium. An early example is an invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard, or felt to others. But speech limits the range of communication to the distance a voice can carry and limits the audience to those present when the speech is uttered. The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time. -->
