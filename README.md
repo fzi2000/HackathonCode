@@ -11,3 +11,5 @@ Sentiment Analysis for Effective Communication:
 Understanding the sentiment expressed in emails is crucial for effective communication. The Mail-O-Matic Extension incorporates Sentiment Analysis, which evaluates the emotional tone of incoming emails. By gaining insights into the sender's sentiment, you can tailor your responses accordingly, ensuring better engagement and communication outcomes.
 
 Intelligent Response Suggestions using Smart Reply: Using NLP algorithms, the plugin suggests contextually appropriate responses for incoming emails. It understands the email content and provides suggested replies that align with the user's communication style.
+
+You can download the folder and upload it in Chrome Extension to test the working extension.
