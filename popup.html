@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mail-O-Matic Features</title>
+  <!-- This is the title of our extention -->
+
+  <script src="popup.js"></script>
+  <!-- We use a separate javascript file for this html page -->
+  <style>
+    /* creating some basic classes for design purposes */
+    .button-spacing {
+      margin-bottom: 10px;
+      background-color: #ffe1ea;
+      color: #023C40;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+     .prompt-style {
+      margin-bottom: 10px;
+      border-radius: 10px;
+      padding: 10px 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-icon {
+      width: 50px;
+    }
+    .header-text {
+      color: #c350ff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body style="background: linear-gradient(to bottom, #ffe6fe, #fab4f4);">
+
+  <div class="header-container">
+    <img src="icon128.png" alt="Icon" class="header-icon">
+    <h2 class="header-text">Mail-O-Matic Features</h3>
+  </div>
+
+  <input type="text" id="composeInput" placeholder="Enter a prompt to smart compose" class="prompt-style">
+  <button id="smartComposeBtn" class="button-spacing">Smart Compose</button>
+  <div id="outputCompose" style="color: #044145;"></div>
+  <button id="summarizeBtn" class="button-spacing">Summarize</button>
+  <div id="outputSummary" style="color: #044145;"></div>
+  <button id="sentimentAnalysisBtn" class="button-spacing">Sentimental Analysis</button>
+  <div id="outputSenti" style="color: #044145;"></div>
+
+</body>
+</html>
