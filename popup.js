@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+  // Get references to the required HTML elements  
     const smartComposeBtn = document.getElementById("smartComposeBtn");
     const summarizeBtn = document.getElementById("summarizeBtn");
     const sentimentAnalysisBtn = document.getElementById("sentimentAnalysisBtn");
@@ -6,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const outputSummary = document.getElementById("outputSummary");
     const outputSenti = document.getElementById("outputSenti");
   
+     // Add event listeners to the buttons
     smartComposeBtn.addEventListener("click", function() {
         const prompt = composeInput.value;
         //   const prompt = prompt("Enter the meeting prompt to draft a mail:");
@@ -27,9 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   
 
+     // Function for smart compose feature
     function smartCompose(prompt) {
       const url = "https://api.ai21.com/studio/v1/j2-mid/complete";
       const payload = {
+       // Prompt and other parameters for smart compose
         prompt: prompt,
         numResults: 1,
         maxTokens: 70,
@@ -83,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   
+    // Function for summarize feature
     function summarize(text) {
       const url = "https://api.ai21.com/studio/v1/summarize";
       const payload = {
@@ -115,15 +120,12 @@ document.addEventListener("DOMContentLoaded", function() {
         //     console.error("No summary found");
         //   }
         })
-    //     const summary = data.choices[0].text;
-    //     outputDiv.innerHTML = summary;
-    //   })
       .catch(error => {
         console.error(error);
       });
     }
   
-
+     // Function for sentimental analysis feature
     function sentimentAnalysis(text) {
         const url = "https://api.ai21.com/studio/v1/j2-ultra/complete";
         const bad_words=["bad","horrible","dirty","unclean", "dislike","eww","old", "trash","smelly","noisy", "nasty"]
